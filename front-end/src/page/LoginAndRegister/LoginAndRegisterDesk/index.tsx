@@ -57,7 +57,7 @@ const LoginAndRegisterDesk: React.FC<LoginAndRegisterDeskProps> = ({
           value={login.password === undefined ? '' : login.password}
           onChange={handleLoginChange}
         />
-        <NavLink to='/verificar/email'>Esqueci a senha</NavLink>
+        <NavLink preventScrollReset={true} to='/verificar/email'>Esqueci a senha</NavLink>
         <div className={style.box_button}>
           <Button
             name='Entrar'

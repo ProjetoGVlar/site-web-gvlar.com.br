@@ -204,8 +204,8 @@ const PropertyId = () => {
                         {!(data.sell === null) && data.sell > 0
                           ? `R$ ${transformationFloatString(data.sell)}`
                           : data.sell === 0
-                          ? 'A combinar'
-                          : '-'}
+                            ? 'A combinar'
+                            : '-'}
                       </p>
                     </div>
                     <div>
@@ -214,8 +214,8 @@ const PropertyId = () => {
                         {!(data.rental === null) && data.rental > 0
                           ? `R$ ${transformationFloatString(data.rental)}`
                           : data.rental === 0
-                          ? 'A combinar'
-                          : '-'}
+                            ? 'A combinar'
+                            : '-'}
                       </p>
                     </div>
                   </div>
@@ -282,8 +282,8 @@ const PropertyId = () => {
                             {!(data.sell === null) && data.sell > 0
                               ? `R$ ${transformationFloatString(data.sell)}`
                               : data.sell === 0
-                              ? 'A combinar'
-                              : '-'}
+                                ? 'A combinar'
+                                : '-'}
                           </p>
                         </div>
                         <div>
@@ -292,8 +292,8 @@ const PropertyId = () => {
                             {!(data.rental === null) && data.rental > 0
                               ? `R$ ${transformationFloatString(data.rental)}`
                               : data.rental === 0
-                              ? 'A combinar'
-                              : '-'}
+                                ? 'A combinar'
+                                : '-'}
                           </p>
                         </div>
                       </div>
@@ -371,7 +371,7 @@ const PropertyId = () => {
                   >
                     {dataFilter.map((property) => (
                       <div style={cardStyle} key={property.id}>
-                        <Card {...property} to={`encontrar/imovel/${property.id}`} />
+                        <Card {...property} to={`/encontrar/imovel/${property.id}`} />
                       </div>
                     ))}
                   </Glider>

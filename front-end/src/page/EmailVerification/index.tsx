@@ -46,7 +46,7 @@ const EmailVerification = () => {
             desfrutar de todas as vantagens que a GVLAR tem para oferecer! Agradecemos por fazer
             parte da nossa comunidade.
           </p>
-          <NavLink to='/'>
+          <NavLink preventScrollReset={true} to='/'>
             Voltar para GVLAR
             <div />
           </NavLink>

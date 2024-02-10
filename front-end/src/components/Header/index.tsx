@@ -12,28 +12,32 @@ const Header = () => {
       <HeaderMobile />
       <nav className={style.nav}>
         <li>
-          <NavLink className={style.home} to='/'>
+          <NavLink preventScrollReset={true} className={style.home} to='/'>
             <div />
             <span>Home</span>
           </NavLink>
         </li>
         <div className={style.center}>
           <li>
-            <NavLink className={style.filter} to='/encontrar/imovel'>
+            <NavLink preventScrollReset={true} className={style.filter} to='/encontrar/imovel'>
               <div />
               <span>Encontrar</span>
             </NavLink>
           </li>
           <div className={style.house} />
           <li>
-            <NavLink className={style.announce} to={user ? '/adm/imoveis' : '/login'}>
+            <NavLink
+              preventScrollReset={true}
+              className={style.announce}
+              to={user ? '/adm/imoveis' : '/login'}
+            >
               <span>Anunciar</span>
               <div />
             </NavLink>
           </li>
         </div>
         <li>
-          <NavLink className={style.login} to={user ? '/adm' : '/login'}>
+          <NavLink preventScrollReset={true} className={style.login} to={user ? '/adm' : '/login'}>
             <div />
             <span>{user ? firstWord(user.name) : 'Entrar'}</span>
           </NavLink>

@@ -7,7 +7,11 @@ import { Context } from '@/context';
 const ButtonPhone = () => {
   const { user } = useContext(Context);
   return (
-    <NavLink to={user ? '/adm/imoveis' : '/login'} className={style.button}>
+    <NavLink
+      preventScrollReset={true}
+      to={user ? '/adm/imoveis' : '/login'}
+      className={style.button}
+    >
       Anunciar
       <MegaPhoneOrange />
     </NavLink>

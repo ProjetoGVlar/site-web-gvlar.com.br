@@ -1,5 +1,5 @@
 import { Card as TypeCard } from '@/types';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation, useNavigate, useParams } from 'react-router-dom';
 import Footage from '@/assets/footage/footage.svg';
 import FootageOff from '@/assets/footage/footageOff.svg';
 import Bedroom from '@/assets/bedroom/bedroom.svg';
@@ -57,13 +57,15 @@ const Card: React.FC<CardProps> = ({
   };
 
   return (
-    <NavLink
+    <Link
       onClick={handleClick}
       className={classNames({
         [style.card]: action === false,
         [style['card-action']]: action === true,
       })}
       to={to}
+      preventScrollReset={true}
+      replace={false}
     >
       <div className={style.images}>
         <Slider {...settings}>
@@ -130,8 +132,8 @@ const Card: React.FC<CardProps> = ({
               {!(sell === null) && sell > 0
                 ? transformationFloatString(sell)
                 : sell === 0
-                ? 'A combinar'
-                : '-'}
+                  ? 'A combinar'
+                  : '-'}
             </p>
           </div>
           <div className={style.value}>
@@ -141,13 +143,13 @@ const Card: React.FC<CardProps> = ({
               {!(rental === null) && rental > 0
                 ? transformationFloatString(rental)
                 : rental === 0
-                ? 'A combinar'
-                : '-'}
+                  ? 'A combinar'
+                  : '-'}
             </p>
           </div>
         </div>
       </div>
-    </NavLink>
+    </Link>
   );
 };
 

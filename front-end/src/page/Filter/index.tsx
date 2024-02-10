@@ -19,6 +19,7 @@ import Input from '@/components/Input';
 import Button from '@/components/Button';
 import { validateEmail, validatePhone } from '@/functions/validate';
 import { sendEmail } from '@/service/api/email';
+import { useLocation } from 'react-router-dom';
 
 interface FormFiltersEmail {
   email: string;
@@ -27,6 +28,8 @@ interface FormFiltersEmail {
 }
 
 const Filter = () => {
+  const { state } = useLocation();
+
   const [data, setData] = useState<PageFilter>({} as PageFilter);
   const [loading, setLoading] = useState<boolean>(false);
   const [_error, setError] = useState<ErrorAxios | null>(null);
@@ -38,6 +41,14 @@ const Filter = () => {
   useEffect(() => {
     scrollToTop();
   }, []);
+
+  useEffect(() => {
+    if (state && !(Object.keys(state.state).length === 0)) {
+      setFilterPage(shrinkingObjectFiltersTransform({ ...state.state }));
+      setLoading(true);
+      fetchData(1, { ...state.state });
+    }
+  }, [state]);
 
   const handleFilterChange = useCallback(
     (e: FormEvent<HTMLInputElement | HTMLButtonElement | HTMLTextAreaElement>) => {

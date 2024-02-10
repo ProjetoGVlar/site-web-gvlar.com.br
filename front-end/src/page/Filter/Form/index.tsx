@@ -32,16 +32,16 @@ const Form: React.FC<FormProps> = ({ filter, handleFilterChange, handleOnClick }
           <div className={style.type}>
             <InputCheck
               type='checkbox'
-              label='Vender'
+              label='Comprar'
               title='business'
               value={
                 filter.business === 'ambos'
                   ? 'aluguel'
                   : filter.business === 'aluguel'
-                  ? 'ambos'
-                  : filter.business === 'venda'
-                  ? ''
-                  : 'venda'
+                    ? 'ambos'
+                    : filter.business === 'venda'
+                      ? ''
+                      : 'venda'
               }
               checked={filter.business === 'ambos' || filter.business === 'venda' ? true : false}
               onChange={handleFilterChange}
@@ -54,10 +54,10 @@ const Form: React.FC<FormProps> = ({ filter, handleFilterChange, handleOnClick }
                 filter.business === 'ambos'
                   ? 'venda'
                   : filter.business === 'venda'
-                  ? 'ambos'
-                  : filter.business === 'aluguel'
-                  ? ''
-                  : 'aluguel'
+                    ? 'ambos'
+                    : filter.business === 'aluguel'
+                      ? ''
+                      : 'aluguel'
               }
               checked={filter.business === 'ambos' || filter.business === 'aluguel' ? true : false}
               onChange={handleFilterChange}
