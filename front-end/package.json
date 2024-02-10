@@ -1,7 +1,7 @@
 {
   "name": "front-end",
   "private": true,
-  "homepage": "http://www.projetogvlar.uni5.net/",
+  "homepage": "http://www.projetogvlar.uni5.net/front-end/dist",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
