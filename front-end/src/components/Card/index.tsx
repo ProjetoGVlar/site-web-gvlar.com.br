@@ -1,5 +1,5 @@
 import { Card as TypeCard } from '@/types';
-import { Link, NavLink, useLocation, useNavigate, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Footage from '@/assets/footage/footage.svg';
 import FootageOff from '@/assets/footage/footageOff.svg';
 import Bedroom from '@/assets/bedroom/bedroom.svg';
