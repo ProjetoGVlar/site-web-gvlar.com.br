@@ -24,4 +24,5 @@ export default defineConfig({
       },
     },
   },
+  base: 'http://www.projetogvlar.uni5.net/',
 });
