@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import FooterMobile from './FooterMobile';
 import Logo from '@/assets/gvlar/logoWhite.svg';
 import style from './footer.module.scss';

@@ -58,7 +58,9 @@ const LoginAndRegisterMobile: React.FC<LoginAndRegisterMobileProps> = ({
           value={login.password === undefined ? '' : login.password}
           onChange={handleLoginChange}
         />
-        <NavLink to='/verificar/email'>Esqueci a senha</NavLink>
+        <NavLink preventScrollReset={true} to='/verificar/email'>
+          Esqueci a senha
+        </NavLink>
         <div>
           <Button
             name='Entrar'

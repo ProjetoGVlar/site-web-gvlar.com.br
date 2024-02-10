@@ -16,6 +16,7 @@ const Link: React.FC<LinkProps> = ({ name, to, action, onClick }: LinkProps) => 
 
   return (
     <NavLink
+      preventScrollReset={true}
       className={classNames({ [style.nav]: true, [style.action]: action })}
       onClick={onClick || handleClick}
       to={to}

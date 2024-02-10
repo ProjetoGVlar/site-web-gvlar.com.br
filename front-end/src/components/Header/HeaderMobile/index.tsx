@@ -54,6 +54,7 @@ const HeaderMobile = () => {
                   toggleModal();
                 }}
                 to='/'
+                preventScrollReset={true}
               >
                 <div />
                 <span>Home</span>
@@ -61,6 +62,7 @@ const HeaderMobile = () => {
             </li>
             <li>
               <NavLink
+                preventScrollReset={true}
                 className={style.filter}
                 onClick={() => {
                   toggleModal();
@@ -73,6 +75,7 @@ const HeaderMobile = () => {
             </li>
             <li>
               <NavLink
+                preventScrollReset={true}
                 className={style.announce}
                 onClick={() => {
                   toggleModal();
@@ -85,6 +88,7 @@ const HeaderMobile = () => {
             </li>
             <li>
               <NavLink
+                preventScrollReset={true}
                 className={style.login}
                 onClick={() => {
                   toggleModal();

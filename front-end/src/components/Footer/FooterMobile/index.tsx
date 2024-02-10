@@ -1,5 +1,4 @@
 import Logo from '@/assets/gvlar/logoWhite.svg';
-import { NavLink } from 'react-router-dom';
 import style from './footerMobile.module.scss';
 import Effect from '@/img/effect/small.png';
 import ButtonArrow from '../components/ButtonArrow';
