@@ -1,59 +1,27 @@
-# Projeto GVLAR - Desenvolvimento do Website
+# React + TypeScript + Vite
 
-Este repositório contém o código-fonte e os recursos relacionados ao desenvolvimento do website da empresa GVLAR. O projeto foi desenvolvido pela equipe da Dunts Tech e está disponível no GitHub para colaboração e acompanhamento do progresso.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Visão Geral
+Currently, two official plugins are available:
 
-A GVLAR é uma empresa imobiliaria. Este projeto visa criar um site moderno e funcional para promover os serviços e produtos da empresa, além de fornecer informações importantes aos clientes e potenciais clientes.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Estrutura do Projeto
+## Expanding the ESLint configuration
 
-O projeto está dividido em duas partes principais:
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-### Frontend
+- Configure the top-level `parserOptions` property like this:
 
-O frontend foi desenvolvido utilizando as seguintes tecnologias:
+```js
+   parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+   },
+```
 
-- Vite.js
-- React.js
-- TypeScript
-
-Para executar o frontend localmente, siga estas etapas:
-
-1. Navegue até o diretório `frontend`: `cd frontend/`
-2. Instale as dependências: `npm install` ou `yarn install`
-3. Inicie o servidor de desenvolvimento: `npm run dev` ou `yarn dev`
-
-### Backend
-
-O backend foi desenvolvido utilizando as seguintes tecnologias:
-
-- Nest.js
-- Prisma
-- Docker
-
-Para executar o backend localmente, siga estas etapas:
-
-1. Navegue até o diretório `backend`: `cd backend/`
-2. Instale as dependências: `npm install` ou `yarn install`
-3. Inicie o servidor de desenvolvimento: `npm run start:dev` ou `yarn start:dev`
-
-## Como Contribuir
-
-1. Faça um fork deste repositório
-2. Crie uma nova branch (`git checkout -b feature/nova-feature`)
-3. Faça suas alterações e commit (`git commit -am 'Adiciona nova feature'`)
-4. Faça um push para a branch (`git push origin feature/nova-feature`)
-5. Crie um novo Pull Request
-
-## Status do Projeto
-
-Atualmente, estamos na finalização na primeira versão de desenvolvimento inicial do projeto.
-
-## Contato
-
-Para mais informações sobre o projeto, entre em contato com a equipe de desenvolvimento:
-
-- Email: []
-- Website: [www.gvlar.com]
-
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
