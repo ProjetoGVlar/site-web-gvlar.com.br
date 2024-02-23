@@ -1,9 +1,1 @@
-RewriteEngine On
-RewriteBase /
-
-# Redireciona todas as requisições para index.html na pasta dist
-RewriteRule ^ index.html /dist/index.html [L]
-
-# Se existir um arquivo na pasta www, use-o
-RewriteCond %{REQUEST_FILENAME} -f
-RewriteRule !^build/ /dist/%{REQUEST_FILENAME} [L]
+DirectoryIndex  /dist/index.html
