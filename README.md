@@ -1,59 +1,73 @@
-# Projeto GVLAR - Desenvolvimento do Website
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+</p>
 
-Este repositório contém o código-fonte e os recursos relacionados ao desenvolvimento do website da empresa GVLAR. O projeto foi desenvolvido pela equipe da Dunts Tech e está disponível no GitHub para colaboração e acompanhamento do progresso.
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-## Visão Geral
+  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+    <p align="center">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
+<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
+<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
+    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+</p>
+  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-A GVLAR é uma empresa imobiliaria. Este projeto visa criar um site moderno e funcional para promover os serviços e produtos da empresa, além de fornecer informações importantes aos clientes e potenciais clientes.
+## Description
 
-## Estrutura do Projeto
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-O projeto está dividido em duas partes principais:
+## Installation
 
-### Frontend
+```bash
+$ npm install
+```
 
-O frontend foi desenvolvido utilizando as seguintes tecnologias:
+## Running the app
 
-- Vite.js
-- React.js
-- TypeScript
+```bash
+# development
+$ npm run start
 
-Para executar o frontend localmente, siga estas etapas:
+# watch mode
+$ npm run start:dev
 
-1. Navegue até o diretório `frontend`: `cd frontend/`
-2. Instale as dependências: `npm install` ou `yarn install`
-3. Inicie o servidor de desenvolvimento: `npm run dev` ou `yarn dev`
+# production mode
+$ npm run start:prod
+```
 
-### Backend
+## Test
 
-O backend foi desenvolvido utilizando as seguintes tecnologias:
+```bash
+# unit tests
+$ npm run test
 
-- Nest.js
-- Prisma
-- Docker
+# e2e tests
+$ npm run test:e2e
 
-Para executar o backend localmente, siga estas etapas:
+# test coverage
+$ npm run test:cov
+```
 
-1. Navegue até o diretório `backend`: `cd backend/`
-2. Instale as dependências: `npm install` ou `yarn install`
-3. Inicie o servidor de desenvolvimento: `npm run start:dev` ou `yarn start:dev`
+## Support
 
-## Como Contribuir
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
-1. Faça um fork deste repositório
-2. Crie uma nova branch (`git checkout -b feature/nova-feature`)
-3. Faça suas alterações e commit (`git commit -am 'Adiciona nova feature'`)
-4. Faça um push para a branch (`git push origin feature/nova-feature`)
-5. Crie um novo Pull Request
+## Stay in touch
 
-## Status do Projeto
+- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
 
-Atualmente, estamos na finalização na primeira versão de desenvolvimento inicial do projeto.
+## License
 
-## Contato
-
-Para mais informações sobre o projeto, entre em contato com a equipe de desenvolvimento:
-
-- Email: []
-- Website: [www.gvlar.com]
-
+Nest is [MIT licensed](LICENSE).
