@@ -1,7 +1,7 @@
 {
   "name": "front-end",
   "private": true,
-  "homepage": "http://www.gvlar.uni5.net/dist",
+  "homepage": "./dist/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
