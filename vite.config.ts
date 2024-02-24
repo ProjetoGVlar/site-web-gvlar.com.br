@@ -24,5 +24,4 @@ export default defineConfig({
       },
     },
   },
-  base: 'http://www.gvlar.uni5.net/dist/',
 });
