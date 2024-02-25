@@ -10,7 +10,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Define o diretório onde os arquivos estáticos serão servidos
-const staticFilesPath = path.join(__dirname, 'dist');
+const staticFilesPath = path.join(__dirname, '/front-end/dist');
 
 // Configura o Express para servir os arquivos estáticos
 app.use(express.static(staticFilesPath));
