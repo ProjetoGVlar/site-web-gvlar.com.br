@@ -274,8 +274,7 @@ export class PropertyService {
     if (filters.about) {
       and.push({
         about: {
-          equals: filters.about,
-          mode: 'insensitive',
+          contains: filters.about,
         },
       });
     }
@@ -285,31 +284,26 @@ export class PropertyService {
         {
           zone: {
             contains: filters.text,
-            mode: 'insensitive',
           },
         },
         {
           state: {
             contains: filters.text,
-            mode: 'insensitive',
           },
         },
         {
           city: {
             contains: filters.text,
-            mode: 'insensitive',
           },
         },
         {
           area: {
             contains: filters.text,
-            mode: 'insensitive',
           },
         },
         {
           address: {
             contains: filters.text,
-            mode: 'insensitive',
           },
         },
       );
